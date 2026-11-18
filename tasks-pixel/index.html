@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mukker Tasks</title>
+<meta name="theme-color" content="#110e2e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mukker Tasks">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<div class="stars s2" aria-hidden="true"></div>
+<main class="app">
+  <header class="top">
+    <div class="bar">
+      <button id="dateBtn" class="chip" type="button" aria-haspopup="dialog">📅 <span id="dateTxt"></span></button>
+      <div id="clock" class="chip clock" aria-label="Current time"></div>
+    </div>
+    <div class="brand">
+      <img id="heroPet" class="px hero" alt="">
+      <div>
+        <h1>MUKKER<span>TASKS</span></h1>
+        <p id="today" class="sub">Let's get moving ✦</p>
+      </div>
+    </div>
+    <div class="meter" aria-hidden="true"><div id="meterFill"></div></div>
+  </header>
+  <section id="folders" class="folders" aria-live="polite"></section>
+  <button id="addFolderBtn" class="btn gold big" type="button">+ NEW FOLDER</button>
+  <p class="foot">Saved on this device · works offline</p>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden>
+  <img class="px" alt=""><p></p>
+</div>
+
+<div id="cal" class="sheet" hidden>
+  <div class="sheet-bg" data-calclose></div>
+  <div class="sheet-card cal-card" role="dialog" aria-label="Calendar">
+    <div class="cal-head">
+      <button type="button" class="btn ghost sq" id="calPrev" aria-label="Previous month">◀</button>
+      <h2 id="calTitle"></h2>
+      <button type="button" class="btn ghost sq" id="calNext" aria-label="Next month">▶</button>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="row"><button type="button" class="btn ghost" id="calToday">Today</button><button type="button" class="btn gold" data-calclose>Close</button></div>
+  </div>
+</div>
+
+<div id="sheet" class="sheet" hidden>
+  <div class="sheet-bg" data-close></div>
+  <form class="sheet-card" id="sheetForm" autocomplete="off">
+    <h2 id="sheetTitle">New folder</h2>
+    <div id="sheetBody"></div>
+    <div class="row">
+      <button type="button" class="btn ghost" data-close>Cancel</button>
+      <button type="submit" class="btn gold" id="sheetOk">Save</button>
+    </div>
+  </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

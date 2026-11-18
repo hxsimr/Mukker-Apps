@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mukker Apps</title>
+<meta name="description" content="Offline to-do apps by Harsimran.">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0e0e12;
+    color: #f4f1ea;
+  }
+  main {
+    width: min(34rem, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 3rem 0 4rem;
+  }
+  h1 {
+    margin: 0 0 0.4rem;
+    font-size: 2rem;
+    letter-spacing: -0.03em;
+  }
+  p { margin: 0; color: #b7b3c9; line-height: 1.5; }
+  ul { list-style: none; padding: 0; margin: 1.6rem 0 0; display: grid; gap: 0.75rem; }
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #1a1a22;
+    border-radius: 14px;
+    padding: 1rem 1.1rem;
+  }
+  a:hover, a:focus-visible { background: #242430; }
+  a strong { display: block; font-size: 1.1rem; margin-bottom: 0.15rem; }
+  a span { color: #9a96ad; font-size: 0.95rem; }
+  a.pixel { box-shadow: inset 4px 0 0 #ffcc33; }
+  a.black { box-shadow: inset 4px 0 0 #d1d1d6; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Mukker Apps</h1>
+  <p>Offline to-do apps. On iPhone, open one in Safari, then Share → Add to Home Screen. After the first open it works without internet. Tasks stay on that device.</p>
+  <ul>
+    <li><a class="pixel" href="tasks-pixel/"><strong>Mukker Tasks — Pixel</strong><span>Colourful pixel pets</span></a></li>
+    <li><a class="black" href="tasks-black/"><strong>Mukker Tasks — Black</strong><span>Black Notes-style</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
